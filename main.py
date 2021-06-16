@@ -6,9 +6,9 @@ bot = client()
 
 
 def spambots():
-    gameid = input("Enter the game pin:")
-    botamount = input("Enter the amount of bots (max 2000):")
-    custom_username = input("Enter bots\' username:")
+    gameid = input("Enter the game pin: ")
+    botamount = input("Enter the amount of bots (max 2000): ")
+    custom_username = input("Enter bots\' username: ")
 
     def joingame():
         username = (custom_username + str(random.randint(1, 10000)))
