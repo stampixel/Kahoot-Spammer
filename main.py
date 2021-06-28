@@ -3,8 +3,6 @@ import random
 
 bot = client()
 
-
-
 def spambots():
     gameid = input("Enter the game pin: ")
     botamount = input("Enter the amount of bots (max 2000): ")
@@ -18,11 +16,8 @@ def spambots():
             pass
 
         bot.on("joined", joinHandle)
-        print(f"Joined game {gameid} with username {username}.")
-        # time.sleep(.1)
+        print("Joined game"+gameid+"with username"+username+".")
 
     for x in range(0, (int(botamount))):  # + 10  this is not code
         joingame()
-
-
 spambots()
